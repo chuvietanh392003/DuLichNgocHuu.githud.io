@@ -1,27 +1,267 @@
-{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Ngọc Hữu Tourist </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/chuvietanh392003/slideknm.githud.io/main/static/img/1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
-        .image-container {
+        /* body {
+        background-color: skyblue;
+        height: 100vh;
+        margin: 0;
+
+    } */
+    table {
+            border-collapse: collapse;
             width: 100%;
-            overflow: hidden;
         }
-        .image-container img {
-            float: left;
-            width: 50%;
+        
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        .logo {
+            display: block;
+            width: 500px;
             height: auto;
+            margin: 0;
         }
+        h1 {
+            text-align: center;
+        }
+        .blinking-text {
+            color: #ff0000;
+            animation: blink-animation 2s infinite;
+        }
+
+        @keyframes blink-animation {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
     </style>
+    <script src="script.js"></script>
+    <script>
+        function updateTime() {
+            var now = new Date();
+            var day = now.toLocaleDateString('vi-VN', { weekday: 'long' });
+            var date = now.toLocaleDateString('vi-VN', { day: 'numeric', month: 'numeric', year: 'numeric' });
+            var time = now.toLocaleTimeString('vi-VN', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
+
+            var clock = document.getElementById('theClock');
+            clock.innerHTML = day + ', ' + date + ' ' + time;
+        }
+        setInterval(updateTime, 1000);     
+    </script>
 </head>
 <body>
-    <h1>Nga Pham</h1>
-    <div class="image-container">
-        <img src="{% static 'img/354032248_605863048012525_397098463591672361_n.jpg' %}" >
-        <img src="{% static 'img/353453588_789076816030862_8219339808699051738_n.jpg' %}">
-    </div>
+    <header>        
+        <h1 class="blinking-text">CÔNG TY TNHH DU LỊCH THƯƠNG MẠI VÀ DỊCH VỤ NGỌC HỮU </h1>
+        <div class="style6" id="theClock" style="padding-left: 15px;"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Tour thịnh hành</a></li>
+                <li><a href="#">Đặt vé</a></li>
+                <li><a href="https://www.facebook.com/vietanh392003hg/">Fanpage : Chu Việt Anh </a></li> 
+                <li>Hotline : 091884993 </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Giới thiệu về chúng tôi</h2>
+            <p>Chúng tôi cung cấp dịch vụ vận chuyển xe du lịch chất lượng cao, đáp ứng nhu cầu của khách hàng từ thứ 2 đến thứ 7. <br>
+                Riêng ngày Chủ nhật, khách hàng cần đặt trước để sử dụng dịch vụ. Xin trân trọng cảm ơn </p>
+        </section>
+
+        <section>
+            <h2>Bảng giá thuê xe</h2>
+            <table>
+                <tr>
+                    <th>Tuyến đường</th>
+                    <th>Xe 4 chỗ</th>
+                    <th>Xe 16 chỗ</th>
+                    <th>Xe 30 chỗ</th>
+                    <th>Xe 35 chỗ</th>
+                </tr>
+                <tr>
+                    <td>Nội thành Hà Nội 1 ngày</td>
+                    <td>1,200,000đ</td>
+                    <td>1,800,000đ</td>
+                    <td>2,500,000đ</td>
+                    <td>2,800,000đ</td>
+                </tr>
+                <tr>
+                    <td>Ngoại thành Hà Nội 1 ngày</td>
+                    <td>1,400,000đ</td>
+                    <td>2,000,000đ</td>
+                    <td>2,800,000đ</td>
+                    <td>3,200,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Ninh Bình 1 ngày</td>
+                    <td>1,600,000đ</td>
+                    <td>2,500,000đ</td>
+                    <td>3,200,000đ</td>
+                    <td>3,500,000đ</td>
+                <tr>        
+                </tr>
+                    <td>Hà Nội – Hải Phòng 1 ngày</td>
+                    <td>2,000,000đ</td>
+                    <td>3,000,000đ</td>
+                    <td>3,900,000đ</td>
+                    <td>4,500,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Hạ Long 1 ngày</td>
+                    <td>2,200,000đ</td>
+                    <td>3,400,000đ</td>
+                    <td>4,400,000đ</td>
+                    <td>5,000,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Hạ Long 2 ngày</td>
+                    <td>3,600,000đ</td>
+                    <td>5,900,000đ</td>
+                    <td>6,500,000đ</td>
+                    <td>7,500,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Cửa Ông – Hạ Long 2 ngày</td>
+                    <td>4,000,000đ</td>
+                    <td>6,600,000đ</td>
+                    <td>7,500,000đ</td>
+                    <td>8,500,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Yên Tử 1 ngày</td>
+                    <td>1,700,000đ</td>
+                    <td>3,000,000đ</td>
+                    <td>3,800,000đ</td>
+                    <td>4,300,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Lạng Sơn 2 ngày</td>
+                    <td>3,500,000đ</td>
+                    <td>5,500,000đ</td>
+                    <td>6,500,000đ</td>
+                    <td>7,500,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Mai Châu 2 ngày</td>
+                    <td>3,600,000đ</td>
+                    <td>5,600,000đ</td>
+                    <td>6,800,000đ</td>
+                    <td>7,800,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Móng Cái – Trà Cổ 4 ngày</td>
+                    <td>6,200,000đ</td>
+                    <td>9,900,000đ</td>
+                    <td>13,800,000đ</td>
+                    <td>15,300,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Ninh Bình 2 ngày</td>
+                    <td>2,800,000đ</td>
+                    <td>4,400,000đ</td>
+                    <td>5,500,000đ</td>
+                    <td>6,300,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Cúc Phương 1 ngày</td>
+                    <td>1,800,000đ</td>
+                    <td>2,500,000đ</td>
+                    <td>3,800,000đ</td>
+                    <td>4,300,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Bái Đính – Phát Diệm 1 ngày</td>
+                    <td>1,800,000đ</td>
+                    <td>2,500,000đ</td>
+                    <td>3,800,000đ</td>
+                    <td>4,300,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Chùa Hương 1 ngày</td>
+                    <td>1,500,000đ</td>
+                    <td>1,900,000đ</td>
+                    <td>2,800,000đ</td>
+                    <td>3,300,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Ao Vua – Khoang Xanh 1 ngày</td>
+                    <td>1,400,000đ</td>
+                    <td>1,800,000đ</td>
+                    <td>2,600,000đ</td>
+                    <td>3,000,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Tây Thiên 1 ngày</td>
+                    <td>1,400,000đ</td>
+                    <td>1,800,000đ</td>
+                    <td>2,600,000đ</td>
+                    <td>3,000,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Tam Đảo 1 ngày</td>
+                    <td>1,600,000đ</td>
+                    <td>2,200,000đ</td>
+                    <td>3,000,000đ</td>
+                    <td>3,500,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Sầm Sơn 2 ngày</td>
+                    <td>2,800,000đ</td>
+                    <td>5,500,000đ</td>
+                    <td>6,800,000đ</td>
+                    <td>7,300,000đ</td>
+                </tr>
+                <tr>
+                    <td>Hà Nội – Cửa Lò – Quê Bác 3 ngày</td>
+                    <td>4,600,000đ</td>
+                    <td>8,500,000đ</td>
+                    <td>10,000,000đ</td>
+                    <td>13,500,000đ</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Đặt vé</h2>
+            <form action="#" method="post">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <input type="submit" value="Đặt vé">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Thông tin chi tiết liên hệ</h3><br>
+        <i class="fas fa-star"></i> NGOC HUU TOURIST TRADING AND SERVICE COMPANY LIMITED <br>
+        <i class="fa-solid fa-house"></i> Số nhà 5B, ngõ 76, đường Hùng Vương, tổ 8, Phường Phú Khánh, Thành phố Thái Bình, Tỉnh Thái Bình, Việt Nam <br>
+        <i class="fas fa-phone"></i> SĐT: 0362497123-091209 <br>
+        <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/huu.phamngoc.5621">Facebook: Phạm Ngọc Hữu</a> <br>
+        <i class="fas fa-envelope"></i> Gmail: DuLichNgocHuuTB@gmail.com <br>
+        <p>&copy; 2023 Xe Du Lịch. All rights reserved.</p>
+    </footer>
+    
 </body>
 </html>
