@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-container {
+            width: 100%;
+            overflow: hidden;
+        }
+        .image-container img {
+            float: left;
+            width: 50%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nga Pham</h1>
+    <div class="image-container">
+        <img src="{% static 'img/354032248_605863048012525_397098463591672361_n.jpg' %}" >
+        <img src="{% static 'img/353453588_789076816030862_8219339808699051738_n.jpg' %}">
+    </div>
+</body>
+</html>
