@@ -2,52 +2,60 @@
 <html>
 <head>
     <title> Ngọc Hữu Tourist </title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://raw.githubusercontent.com/chuvietanh392003/slideknm.githud.io/main/static/img/1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <style>
-        /* body {
-        background-color: skyblue;
-        height: 100vh;
-        margin: 0;
-
-    } */
-    table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        
-        th, td {
-            border: 1px solid black;
-            padding: 5px;
-            text-align: left;
-        }
-        
-        th {
-            background-color: #f2f2f2;
-        }
-        .logo {
-            display: block;
-            width: 500px;
-            height: auto;
-            margin: 0;
-        }
-        h1 {
-            text-align: center;
-        }
-        .blinking-text {
-            color: #ff0000;
-            animation: blink-animation 2s infinite;
-        }
-
-        @keyframes blink-animation {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-    </style>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="style">
     <script src="script.js"></script>
+    <style>
+        header {
+            position: relative;
+            background-image: url('https://shopnow.com.vn/image/upload/catalog/mobile/slider/thiet-ke-website-reponsive-1-1000x320.png');
+            background-size: cover;
+            background-position: center;
+            width: 1350px;
+            height: 400px;
+        }
+
+        nav {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+            .section2 {
+            padding: 20px;
+        } 
+    </style>
     <script>
         function updateTime() {
             var now = new Date();
@@ -62,28 +70,28 @@
     </script>
 </head>
 <body>
-    <header>        
-        <h1 class="blinking-text">CÔNG TY TNHH DU LỊCH THƯƠNG MẠI VÀ DỊCH VỤ NGỌC HỮU </h1>
-        <div class="style6" id="theClock" style="padding-left: 15px;"></div>
+    <header>
         <nav>
             <ul>
                 <li><a href="#">Trang chủ</a></li>
                 <li><a href="#">Tour thịnh hành</a></li>
                 <li><a href="#">Đặt vé</a></li>
-                <li><a href="https://www.facebook.com/vietanh392003hg/">Fanpage : Chu Việt Anh </a></li> 
-                <li>Hotline : 091884993 </li>
+                <li><a href="https://www.facebook.com/vietanh392003hg/">Fanpage: Chu Việt Anh</a></li>
+                <li><a href="#"> Hotline: 091884993</a></li>
+                <li><a href="#"><div class="style6" id="theClock" style="padding-left: 15px;"></div>
+</a></li>    
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Giới thiệu về chúng tôi</h2>
+        <section class="section2">
+            <h2>Giới thiệu về chúng tôi</h2>  <br>
             <p>Chúng tôi cung cấp dịch vụ vận chuyển xe du lịch chất lượng cao, đáp ứng nhu cầu của khách hàng từ thứ 2 đến thứ 7. <br>
                 Riêng ngày Chủ nhật, khách hàng cần đặt trước để sử dụng dịch vụ. Xin trân trọng cảm ơn </p>
         </section>
 
-        <section>
+        <section >
             <h2>Bảng giá thuê xe</h2>
             <table>
                 <tr>
@@ -236,7 +244,7 @@
             </table>
         </section>
 
-        <section>
+        <section >
             <h2>Đặt vé</h2>
             <form action="#" method="post">
                 <label for="name">Họ và tên:</label>
@@ -253,12 +261,12 @@
         </section>
     </main>
 
-    <footer>
+    <footer >
         <h3>Thông tin chi tiết liên hệ</h3><br>
         <i class="fas fa-star"></i> NGOC HUU TOURIST TRADING AND SERVICE COMPANY LIMITED <br>
         <i class="fa-solid fa-house"></i> Số nhà 5B, ngõ 76, đường Hùng Vương, tổ 8, Phường Phú Khánh, Thành phố Thái Bình, Tỉnh Thái Bình, Việt Nam <br>
         <i class="fas fa-phone"></i> SĐT: 0362497123-091209 <br>
-        <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/huu.phamngoc.5621">Facebook: Phạm Ngọc Hữu</a> <br>
+        <i class="fab fa-facebook" ></i> <a href="https://www.facebook.com/huu.phamngoc.5621">Facebook: Phạm Ngọc Hữu</a> <br>
         <i class="fas fa-envelope"></i> Gmail: DuLichNgocHuuTB@gmail.com <br>
         <p>&copy; 2023 Xe Du Lịch. All rights reserved.</p>
     </footer>
