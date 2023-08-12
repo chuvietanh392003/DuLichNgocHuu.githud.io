@@ -1,27 +1,11 @@
-// Function to execute when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Code here will be executed once the DOM is fully loaded
-  
-    // Example: Change the text content of an element
-    var heading = document.querySelector('h1');
-    heading.textContent = 'Hello, World!';
-  
-    // Example: Add an event listener to a button
-    var button = document.querySelector('#myButton');
-    button.addEventListener('click', function() {
-      alert('Button clicked!');
-    });
-  
-    // Example: Fetch data from an API
-    fetch('https://api.example.com/data')
-      .then(response => response.json())
-      .then(data => {
-        // Process the retrieved data
-        console.log(data);
-      })
-      .catch(error => {
-        // Handle any errors that occurred during the fetch
-        console.error(error);
-      });
-  });
-  
+function updateTime() {
+    var now = new Date();
+    var day = now.toLocaleDateString('vi-VN', { weekday: 'long' });
+    var date = now.toLocaleDateString('vi-VN', { day: 'numeric', month: 'numeric', year: 'numeric' });
+    var time = now.toLocaleTimeString('vi-VN', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false });
+
+    var clock = document.getElementById('theClock');
+    clock.innerHTML = day + ', ' + date + ' ' + time;
+}
+setInterval(updateTime, 1000);    
+

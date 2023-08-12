@@ -1,275 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Ngọc Hữu Tourist </title>
+    <title>Ngọc Hữu Tourist</title>
     <link rel="icon" href="https://raw.githubusercontent.com/chuvietanh392003/slideknm.githud.io/main/static/img/1.png">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="main.js">
-    <link rel="stylesheet" href="style">
-    <script src="script.js"></script>
-    <style>
-        header {
-            position: relative;
-            background-image: url('https://shopnow.com.vn/image/upload/catalog/mobile/slider/thiet-ke-website-reponsive-1-1000x320.png');
-            background-size: cover;
-            background-position: center;
-            width: 1350px;
-            height: 400px;
-        }
-
-        nav {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-right: 20px;
-        }
-
-        nav ul li:last-child {
-            margin-right: 0;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-            .section2 {
-            padding: 20px;
-        } 
-    </style>
-    <script>
-        function updateTime() {
-            var now = new Date();
-            var day = now.toLocaleDateString('vi-VN', { weekday: 'long' });
-            var date = now.toLocaleDateString('vi-VN', { day: 'numeric', month: 'numeric', year: 'numeric' });
-            var time = now.toLocaleTimeString('vi-VN', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true });
-
-            var clock = document.getElementById('theClock');
-            clock.innerHTML = day + ', ' + date + ' ' + time;
-        }
-        setInterval(updateTime, 1000);     
-    </script>
+    <link rel="stylesheet" href="./icon/themify-icons/themify-icons.css"> 
+    <script src="main.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Tour thịnh hành</a></li>
-                <li><a href="#">Đặt vé</a></li>
-                <li><a href="https://www.facebook.com/vietanh392003hg/">Fanpage: Chu Việt Anh</a></li>
-                <li><a href="#"> Hotline: 091884993</a></li>
-                <li><a href="#"><div class="style6" id="theClock" style="padding-left: 15px;"></div>
-</a></li>    
+    <div id="main">
+        <div id="header">
+        <!-- begin nav -->
+            <ul id="nav">
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Tour thịnh hành</a></li>
+                <img src="https://qldt.hust.edu.vn/images/Background.gif" alt="header-img">
+                <li><a href="">Liên hệ</a></li>
+                <li><a href="">Đặt vé</a></li>
+                <li><a href="#"><div id="theClock"></div></a></li>  
             </ul>
-        </nav>
-    </header>
+        <!-- end nav -->
+        <!-- begin search -->
+        <i class="search-icon ti-search"></i>
+        <!-- end search -->
+        
 
-    <main>
-        <section class="section2">
-            <h2>Giới thiệu về chúng tôi</h2>  <br>
-            <p>Chúng tôi cung cấp dịch vụ vận chuyển xe du lịch chất lượng cao, đáp ứng nhu cầu của khách hàng từ thứ 2 đến thứ 7. <br>
-                Riêng ngày Chủ nhật, khách hàng cần đặt trước để sử dụng dịch vụ. Xin trân trọng cảm ơn </p>
-        </section>
+        </div>
+        <div id="slider"> 
 
-        <section >
-            <h2>Bảng giá thuê xe</h2>
-            <table>
-                <tr>
-                    <th>Tuyến đường</th>
-                    <th>Xe 4 chỗ</th>
-                    <th>Xe 16 chỗ</th>
-                    <th>Xe 30 chỗ</th>
-                    <th>Xe 35 chỗ</th>
-                </tr>
-                <tr>
-                    <td>Nội thành Hà Nội 1 ngày</td>
-                    <td>1,200,000đ</td>
-                    <td>1,800,000đ</td>
-                    <td>2,500,000đ</td>
-                    <td>2,800,000đ</td>
-                </tr>
-                <tr>
-                    <td>Ngoại thành Hà Nội 1 ngày</td>
-                    <td>1,400,000đ</td>
-                    <td>2,000,000đ</td>
-                    <td>2,800,000đ</td>
-                    <td>3,200,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Ninh Bình 1 ngày</td>
-                    <td>1,600,000đ</td>
-                    <td>2,500,000đ</td>
-                    <td>3,200,000đ</td>
-                    <td>3,500,000đ</td>
-                <tr>        
-                </tr>
-                    <td>Hà Nội – Hải Phòng 1 ngày</td>
-                    <td>2,000,000đ</td>
-                    <td>3,000,000đ</td>
-                    <td>3,900,000đ</td>
-                    <td>4,500,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Hạ Long 1 ngày</td>
-                    <td>2,200,000đ</td>
-                    <td>3,400,000đ</td>
-                    <td>4,400,000đ</td>
-                    <td>5,000,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Hạ Long 2 ngày</td>
-                    <td>3,600,000đ</td>
-                    <td>5,900,000đ</td>
-                    <td>6,500,000đ</td>
-                    <td>7,500,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Cửa Ông – Hạ Long 2 ngày</td>
-                    <td>4,000,000đ</td>
-                    <td>6,600,000đ</td>
-                    <td>7,500,000đ</td>
-                    <td>8,500,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Yên Tử 1 ngày</td>
-                    <td>1,700,000đ</td>
-                    <td>3,000,000đ</td>
-                    <td>3,800,000đ</td>
-                    <td>4,300,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Lạng Sơn 2 ngày</td>
-                    <td>3,500,000đ</td>
-                    <td>5,500,000đ</td>
-                    <td>6,500,000đ</td>
-                    <td>7,500,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Mai Châu 2 ngày</td>
-                    <td>3,600,000đ</td>
-                    <td>5,600,000đ</td>
-                    <td>6,800,000đ</td>
-                    <td>7,800,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Móng Cái – Trà Cổ 4 ngày</td>
-                    <td>6,200,000đ</td>
-                    <td>9,900,000đ</td>
-                    <td>13,800,000đ</td>
-                    <td>15,300,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Ninh Bình 2 ngày</td>
-                    <td>2,800,000đ</td>
-                    <td>4,400,000đ</td>
-                    <td>5,500,000đ</td>
-                    <td>6,300,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Cúc Phương 1 ngày</td>
-                    <td>1,800,000đ</td>
-                    <td>2,500,000đ</td>
-                    <td>3,800,000đ</td>
-                    <td>4,300,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Bái Đính – Phát Diệm 1 ngày</td>
-                    <td>1,800,000đ</td>
-                    <td>2,500,000đ</td>
-                    <td>3,800,000đ</td>
-                    <td>4,300,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Chùa Hương 1 ngày</td>
-                    <td>1,500,000đ</td>
-                    <td>1,900,000đ</td>
-                    <td>2,800,000đ</td>
-                    <td>3,300,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Ao Vua – Khoang Xanh 1 ngày</td>
-                    <td>1,400,000đ</td>
-                    <td>1,800,000đ</td>
-                    <td>2,600,000đ</td>
-                    <td>3,000,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Tây Thiên 1 ngày</td>
-                    <td>1,400,000đ</td>
-                    <td>1,800,000đ</td>
-                    <td>2,600,000đ</td>
-                    <td>3,000,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Tam Đảo 1 ngày</td>
-                    <td>1,600,000đ</td>
-                    <td>2,200,000đ</td>
-                    <td>3,000,000đ</td>
-                    <td>3,500,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Sầm Sơn 2 ngày</td>
-                    <td>2,800,000đ</td>
-                    <td>5,500,000đ</td>
-                    <td>6,800,000đ</td>
-                    <td>7,300,000đ</td>
-                </tr>
-                <tr>
-                    <td>Hà Nội – Cửa Lò – Quê Bác 3 ngày</td>
-                    <td>4,600,000đ</td>
-                    <td>8,500,000đ</td>
-                    <td>10,000,000đ</td>
-                    <td>13,500,000đ</td>
-                </tr>
-            </table>
-        </section>
+        </div>
+        <div id="content">
 
-        <section >
-            <h2>Đặt vé</h2>
-            <form action="#" method="post">
-                <label for="name">Họ và tên:</label>
-                <input type="text" id="name" name="name" required><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-
-                <label for="phone">Số điện thoại:</label>
-                <input type="tel" id="phone" name="phone" required><br>
-
-                <input type="submit" value="Đặt vé">
-            </form>
-        </section>
-    </main>
-
-    <footer >
-        <h3>Thông tin chi tiết liên hệ</h3><br>
-        <i class="fas fa-star"></i> NGOC HUU TOURIST TRADING AND SERVICE COMPANY LIMITED <br>
-        <i class="fa-solid fa-house"></i> Số nhà 5B, ngõ 76, đường Hùng Vương, tổ 8, Phường Phú Khánh, Thành phố Thái Bình, Tỉnh Thái Bình, Việt Nam <br>
-        <i class="fas fa-phone"></i> SĐT: 0362497123-091209 <br>
-        <i class="fab fa-facebook" ></i> <a href="https://www.facebook.com/huu.phamngoc.5621">Facebook: Phạm Ngọc Hữu</a> <br>
-        <i class="fas fa-envelope"></i> Gmail: DuLichNgocHuuTB@gmail.com <br>
-        <p>&copy; 2023 Xe Du Lịch. All rights reserved.</p>
-    </footer>
-    
+        </div>
+        <div id="footer">
+            <h3>Thông tin chi tiết liên hệ</h3><br>
+            <p><i class="fas fa-star"></i> NGOC HUU TOURIST TRADING AND SERVICE COMPANY LIMITED</p>
+            <p><i class="fa-solid fa-house"></i> Số nhà 5B, ngõ 76, đường Hùng Vương, tổ 8, Phường Phú Khánh, Thành phố Thái Bình, Tỉnh Thái Bình, Việt Nam</p>
+            <p><i class="fas fa-phone"></i> SĐT: 0362497123-091209</p>
+            <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/huu.phamngoc.5621">Facebook: Phạm Ngọc Hữu</a></p>
+            <p><i class="fas fa-envelope"></i> Gmail: DuLichNgocHuuTB@gmail.com</p>
+            <p>&copy; 2023 Xe Du Lịch. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
