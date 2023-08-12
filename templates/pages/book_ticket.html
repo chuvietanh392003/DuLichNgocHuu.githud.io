@@ -1,27 +1,28 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 
 <div class="booking-container">
-    <form class="booking-form">
-      <h1>Đặt vé thuê xe</h1>
-      <label for="route">Chọn tuyến đường:</label>
-      <select id="route" name="route">
-        <option value="noi-thanh">Nội thành Hà Nội</option>
-        <option value="ngoai-thanh">Ngoại thành Hà Nội</option>
-      </select>
-      
-      <label for="car-type">Chọn loại xe:</label>
-      <select id="car-type" name="car-type">
-        <option value="4-cho">Xe 4 chỗ</option>
-        <option value="16-cho">Xe 16 chỗ</option>
-        <!-- Thêm các tùy chọn khác -->
-      </select>
-      
-      <label for="departure-date">Ngày khởi hành:</label>
-      <input type="date" id="departure-date" name="departure-date">
-      
-      <button type="submit">Đặt vé</button>
-    </form>
-  </div>
+  
+  <form class="booking-form" method="POST" action='{% url 'add_ticket' %}'>
+    {% csrf_token %}
+    <h1>Đặt vé thuê xe</h1>
+    <label for="route">Chọn tuyến đường:</label>
+    <select id="route" name="route">
+      <option value="noi-thanh">Nội thành Hà Nội</option>
+      <option value="ngoai-thanh">Ngoại thành Hà Nội</option>
+    </select>
+
+    <label for="car-type">Chọn loại xe:</label>
+    <select id="car-type" name="car-type">
+      <option value="4-cho">Xe 4 chỗ</option>
+      <option value="16-cho">Xe 16 chỗ</option>
+      <!-- Thêm các tùy chọn khác -->
+    </select>
+
+    <label for="departure-date">Ngày khởi hành:</label>
+    <input type="date" id="departure-date" name="departure-date" />
+
+    <button type="submit">Đặt vé</button>
+  </form>
+</div>
 
 {% endblock %}
