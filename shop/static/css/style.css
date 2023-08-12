@@ -4,92 +4,6 @@
   box-sizing: border-box;
 }
 
-#main {}
-
-#header {
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#header img {
-  width: 32px;
-  height: 28px;
-}
-
-#nav {
-  display: inline-block;
-}
-#nav > li {
-  display: block;
-}
-#nav li {
-  display: inline-block;
-  position: relative;
-}
-#nav > li > a {
-  color: white;
-  text-transform: uppercase;
-}
-#nav li a {
-  color: white;
-  text-decoration: none;
-  line-height: 50px;
-  padding: 0 20px;
-  display: inline-block;
-  font-weight: bold;
-  transition: 0.3s; /* Thêm hiệu ứng chuyển đổi màu khi hover */
-}
-
-#nav li:hover a {
-  color: #000;
-  background-color: #ccc;
-}
-#header .search-icon {
-  color: #fff;
-  padding: 0 21px;
-  font-size: 20px;
-  line-height: 50px;
-  float: right;
-  cursor: pointer; 
-}
-#header .search-icon:hover {
-  background-color: #ff4436;
-  inline-size: auto;
-}
-
-
-
-
-#slider {
-  margin-top: 50px;
-  height: 450px;
-  width: 100%;
-
-  background-size: cover;
-  background-image: url("https://raw.githubusercontent.com/chuvietanh392003/drink_shop/main/banner32.jpg");
-}
-
-#slider_trend {
-  margin-top: 50px;
-  height: 450px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("https://raw.githubusercontent.com/chuvietanh392003/drink_shop/main/banner32.jpg");
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-#main {}
-
 #h2{
   background-color: #000;
   size: 2000px;
@@ -198,7 +112,9 @@
 #content tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
+.booking-container{
+  padding-top: 75px;
+}
    
 #footer {
   background-color: #333;
@@ -253,10 +169,10 @@
   color: white;
   text-decoration: none;
   transition: 0.3s;
-}
 
-#footer a:hover {
-  color: #ff550f ;
+  :hover {
+    color: #ff550f ;
+  }
 }
 
 #footer p {
