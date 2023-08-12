@@ -5,3 +5,4 @@ def home(request):
 
 def trend(request):
     return render(request, 'pages/trend.html')
+

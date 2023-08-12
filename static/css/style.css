@@ -69,12 +69,22 @@
   margin-top: 50px;
   height: 450px;
   width: 100%;
-
   background-size: cover;
   background-image: url("https://raw.githubusercontent.com/chuvietanh392003/drink_shop/main/banner32.jpg");
 }
 
-.content {}
+
+#slider1 {
+  margin-top: 50px;
+  height: 450px;
+  width: 100%;
+  background-size: cover;
+  background-image: url("{% static 'img/slide1.jpg' %}");
+}
+
+
+
+#content {}
 
 #footer {
   background-color: #333;

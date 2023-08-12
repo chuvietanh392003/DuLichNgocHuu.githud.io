@@ -25,4 +25,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
     path('home/trend', views.trend),
+    path('home/main_page', views.home),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
