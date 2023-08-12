@@ -26,4 +26,5 @@ urlpatterns = [
     path('', views.home),
     path('home/trend', views.trend),
     path('home/main_page', views.home),
+    path('home/book_ticket', views.book_ticket), 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
