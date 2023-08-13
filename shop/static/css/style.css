@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-#h2{
-  background-color: #000;
-  size: 2000px;
-  width: 100px;
-  height: auto;
-}
 #header {
   height: 50px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -72,48 +66,8 @@
   margin-top: 50px;
   height: 450px;
   width: 100%;
-
   background-size: cover;
-  background-image: url("https://raw.githubusercontent.com/chuvietanh392003/drink_shop/main/banner32.jpg");
-}
-
-#slider_trend {
-  margin-top: 50px;
-  height: 450px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("https://raw.githubusercontent.com/chuvietanh392003/drink_shop/main/banner32.jpg");
-}
-
-
-#content{
-  background-color: white;
-}
-#content h2 {
-  color: red;
-}
-#content table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid #ccc;
-}
-
-#content th, #content td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-}
-
-#content th {
-  background-color: #f2f2f2;
-}
-
-#content tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-.booking-container{
-  padding-top: 75px;
+  background-image: url("https://raw.githubusercontent.com/chuvietanh392003/DuLichNgocHuu.githud.io/main/shop/static/img/banner32.jpg"); 
 }
    
 #footer {
@@ -178,4 +132,191 @@
 #footer p {
   font-size: 12px;
   margin-top: 20px;
+}
+
+/* inbox */
+
+#inbox .contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#inbox .contact-form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+}
+
+#inbox .form-title {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+#inbox .form-label {
+  display: block;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+#inbox .form-input,
+#inbox .form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 1em;
+}
+
+#inbox .form-textarea {
+  resize: vertical;
+}
+
+#inbox .form-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#inbox .form-button:hover {
+  background-color: #555;
+}
+
+#price {
+  background-color: #f0f0f0;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#price #slider {
+  margin-top: 20px;
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-image: url("https://raw.githubusercontent.com/chuvietanh392003/DuLichNgocHuu.githud.io/main/shop/static/img/1.jpg"); 
+}
+
+#price h2 {
+  color: red;
+  font-size: 28px;
+  padding: 20px 0;
+}
+
+#price table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin-top: 30px;
+  background-color: white;
+}
+
+#price th,
+#price td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+#price th {
+  background-color: #ffffff;
+}
+
+#price tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  #price {
+      padding: 30px;
+  }
+
+  #price h2 {
+      font-size: 24px;
+  }
+
+  #price table {
+      font-size: 14px;
+  }
+}
+
+
+
+/* .book_ticket */
+.book_ticket{
+  padding: 100px 0 70px 100px;
+  background-color:#f0f0f0
+}
+.book_ticket body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.book_ticket .booking-container {
+  padding-top: 100px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.book_ticket .booking-form {
+  text-align: center;
+}
+
+.book_ticket h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.book_ticket label, select, input, button {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  
+}
+
+.book_ticket select, input {
+  appearance: none;
+  -webkit-appearance: none;
+  background: url('arrow-down.svg') no-repeat right center / 12px;
+  padding-right: 30px;
+}
+
+.book_ticket button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book_ticket button:hover {
+  background-color: #555;
 }
