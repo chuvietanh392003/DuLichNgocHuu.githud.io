@@ -7,6 +7,6 @@ function updateTime() {
     var clock = document.getElementById('theClock');
     clock.innerHTML = day + ', ' + date + ' ' + time;
 }
-setInterval(updateTime, 1000);    
+setInterval(updateTime, 1000);  
 
-
+  

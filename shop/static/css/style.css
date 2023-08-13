@@ -134,6 +134,64 @@
   margin-top: 20px;
 }
 
+/* trend */
+
+#trend #slider {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  animation: backgroundSlide 12s infinite;
+}
+
+@keyframes backgroundSlide {
+  0% {
+    background-image: url("https://raw.githubusercontent.com/chuvietanh392003/DuLichNgocHuu.githud.io/main/shop/static/img/2.png");
+  }
+  33.33% {
+    background-image: url("https://raw.githubusercontent.com/chuvietanh392003/DuLichNgocHuu.githud.io/main/shop/static/img/3.png");
+  }
+  66.66% {
+    background-image: url("https://raw.githubusercontent.com/chuvietanh392003/DuLichNgocHuu.githud.io/main/shop/static/img/4.png");
+  }
+  100% {
+    background-image: url("https://raw.githubusercontent.com/chuvietanh392003/DuLichNgocHuu.githud.io/main/shop/static/img/2.png");
+  }
+}
+
+#trend .nhatrang p,
+#trend .hanoi p,
+#trend .sapa p,
+#trend .paris p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-right: 0;
+  
+}
+
+#trend .nhatrang img,
+#trend .hanoi img,
+#trend .sapa img,
+#trend .paris img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-right: 80px;
+}
+
+#trend .nhatrang,
+#trend .hanoi,
+#trend .sapa,
+#trend .paris {
+  display: flex;
+  align-items: center;
+  margin:30px 0px;
+  max-width: 1200px;
+  text-align: left;
+  padding-left: 20px;
+
+}
+
+
 /* inbox */
 
 #inbox .contact-section {
@@ -192,6 +250,9 @@
 #inbox .form-button:hover {
   background-color: #555;
 }
+
+
+/* price */
 
 #price {
   background-color: #f0f0f0;
@@ -256,6 +317,7 @@
 
 
 /* .book_ticket */
+
 .book_ticket{
   padding: 100px 0 70px 100px;
   background-color:#f0f0f0

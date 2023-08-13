@@ -5,8 +5,6 @@ def home(request):
 
 def trend(request):
     return render(request, 'pages/trend.html')
-def price(request):
-    return render(request, 'pages/price.html')
 def inbox(request):
     return render(request, 'pages/inbox.html')
 
