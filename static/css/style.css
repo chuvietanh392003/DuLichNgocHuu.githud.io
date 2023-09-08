@@ -382,3 +382,38 @@
 .book_ticket button:hover {
   background-color: #555;
 }
+@media only screen and   (max-width: 63.9375em) {
+  #slider{
+    width: 100%;
+    height: 340px;
+    background-size:contain;
+    background-repeat:no-repeat; 
+  }
+}
+@media only screen and  (min-width: 46.25em ) and (max-width: 63.9375em) {
+  #footer {
+    padding: 10px;
+    text-align: left;
+  }
+
+  #footer h3 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and  (max-width: 46.25em ) {
+  #footer {
+    padding: 10px;
+    text-align: left;
+  }
+
+  #footer h3 {
+    font-size: 16px;
+  }
+
+  #footer a {
+    font-size: 14px;
+  }
+}
+
+
